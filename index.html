@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h1>Dziennik praktyki zawodowej</h1>
+      <label for="links">
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="logbook.html">Dziennik zajęć</a></li>
+            <li><a href="summary.html">Podsumowanie</a></li>
+          </ul>
+        </nav>
+      </label>
+      <div id="menu">
+        <label for="name">
+          Imię:
+          <input type="text" name="name" id="name" />
+        </label>
+        <label for="surname">
+          Nazwisko:
+          <input type="text" name="surname" id="surname" />
+        </label>
+        <label for="class">
+          Klasa:
+          <input type="text" name="class" id="class" />
+        </label>
+        <label for="date">
+          Rok szkolny:
+          <input type="text" name="date" id="date" />
+        </label>
+        <label for="when">
+          Odbytej w:
+          <input type="text" name="when" id="when" />
+        </label>
+        <fieldset>
+          <legend>Czas trwania praktyk</legend>
+          <label for="dateStart">
+            Data rozpoczęcia:
+            <input type="date" id="dateStart" />
+          </label>
+          <label for="dateEnd">
+            Data zakończenia:
+            <input type="date" id="dateEnd" />
+          </label>
+        </fieldset>
+        <button type="button" id="submit">zatwierdź</button>
+      </div>
+        <div class="display">
+        </div>
+
+      <footer>&copy Baron</footer>
+    </form>
+  </body>
+  <script src="main.js"></script>
+ 
+</html>

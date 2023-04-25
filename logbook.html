@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Dziennik praktyk zawodowej</h1>
+        <label for="links">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="logbook.html">Dziennik zajęć</a></li>
+              <li><a href="summary.html">Podsumowanie</a></li>
+            </ul>
+          </nav>
+        <h2>Realizacja materiału</h2>
+        <div>
+            <fieldset>
+                <legend>Informacja o zajęciach</legend>
+                <label>Wybierz datę zajęć:<input type="date" id="data" name="data" /></label>
+                <label>Wybierz dział:<select id="dzial" name="dzial"> </select></label>
+                <label>Wybierz temat:<select id="Wtem" name="Wtem"> </select></label>
+            </fieldset>
+            <fieldset>
+                <legend>Opiekun</legend>
+                <sp>
+                  Jerzy Kot<input type="radio" id="JK" name="Wych">
+                </sp>
+                <sp>
+                  Maria Nowak<input type="radio" id="MN" name="Wych">
+                </sp>
+                
+                <sp>
+                  Konstanty Kowal<input type="radio" id="KK" name="Wych">
+                </sp>
+                
+            </fieldset
+            >
+            <fieldset>
+                <legend>Realizacja materiału</legend>
+                <label>Sprawozdanie: 
+                  <textarea id="kom" name="kom"></textarea>
+                </label>
+                <f>
+                  <label>Zrealizowano: <input type="checkbox" id="Zrl" name="Zrl"></label>
+                </f>
+                <label>Ile godzin: <input type="text" id="jtks" name="jtks"></label>
+                <label>
+                  Stopień opanowania materiału: 1<input type="range" id="som" name="som" min="1" max="6">6</label>
+                </e>
+            </fieldset> 
+            <button type="button" id="dodaj">dodaj</button>
+        <button type="button">wyczyść</button>
+        </div>
+        <footer>&copy Baron</footer>
+    </form>
+      <script src="main.js"></script>
+</body>
+</html>
